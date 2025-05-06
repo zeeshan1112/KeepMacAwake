@@ -1,6 +1,6 @@
-# StayActive
+# StayActiveApp
 
-StayActive is a lightweight app that simulates small, undetectable user activity to prevent your computer from going idle or triggering sleep mode. It's like a subtle mouse jiggler — but smarter, and without physically moving your cursor.
+StayActiveApp is a lightweight app that simulates small, undetectable user activity to prevent your computer from going idle or triggering sleep mode. It's like a subtle mouse jiggler — but smarter, and without physically moving your cursor.
 
 ## ✨ Features
 
@@ -30,8 +30,8 @@ StayActive is a lightweight app that simulates small, undetectable user activity
 To build the app yourself:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/StayActive.git
-cd StayActive
+git clone https://github.com/zeeshan1112/StayActive.git
+cd StayActiveApp
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt

@@ -1,6 +1,6 @@
 from setuptools import setup
 
-APP = ['stay_active.py']
+APP = ['main.py']
 DATA_FILES = ['icon.png']
 OPTIONS = {
     # 'argv_emulation': True,
