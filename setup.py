@@ -6,6 +6,7 @@ OPTIONS = {
     # 'argv_emulation': True,
     'iconfile': 'icon.png',
     'packages': ['rumps', 'Quartz'],
+    'includes': ['imp'],
     # 'excludes': ['jaraco'],
     'plist': {
         'CFBundleName': 'StayActive',
