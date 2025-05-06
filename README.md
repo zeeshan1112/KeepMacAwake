@@ -13,17 +13,19 @@ StayActiveApp is a lightweight app that simulates small, undetectable user activ
 
 ### 🖥 macOS
 
-1. Download the latest `.dmg` file from [Releases](https://github.com/YOUR_USERNAME/StayActive/releases).
+1. Download the latest `.dmg` file from [Releases](https://github.com/zeeshan1112/StayActiveApp/releases).
 2. Open the `.dmg` and drag **StayActive.app** to your Applications folder.
 3. Launch the app. Grant accessibility permissions if prompted.
 
-### 🪟 Windows
+> ⚠️ macOS: You may need to right-click > Open the first time to bypass Gatekeeper.
 
-1. Download the `.exe` installer from [Releases](https://github.com/YOUR_USERNAME/StayActive/releases).
+### 🪟 Windows (Coming Soon)
+
+1. Download the `.exe` installer from [Releases](https://github.com/zeeshan1112/StayActiveApp/releases) (Not available yet).
 2. Run the installer and follow the steps.
 3. Launch StayActive from the Start Menu.
 
-> ⚠️ macOS: You may need to right-click > Open the first time to bypass Gatekeeper.
+> ⚠️ Windows: Installation is in progress and will be released soon.
 
 ## 🧪 Development
 
