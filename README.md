@@ -1,4 +1,9 @@
-# StayActiveApp
+<p align="center">
+  <img src="icon.png" alt="StayActive Icon" width="120" />
+</p>
+
+<h1 align="center">StayActiveApp</h1>
+
 
 StayActiveApp is a lightweight app that simulates small, undetectable user activity to prevent your computer from going idle or triggering sleep mode. It's like a subtle mouse jiggler — but smarter, and without physically moving your cursor.
 
