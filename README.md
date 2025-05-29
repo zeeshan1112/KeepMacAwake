@@ -29,7 +29,19 @@ StayActiveApp is a lightweight macOS utility that simulates subtle, undetectable
 3.  Open the downloaded `.dmg` file and drag **StayActive.app** to your Applications folder.
 
 > ⚠️ **First Launch Warning (Gatekeeper):**
-> The first time you launch StayActiveApp, macOS Gatekeeper might present a warning because the app is downloaded from the internet and not from the Mac App Store. To open it, **right-click on StayActive.app in your Applications folder and select "Open"**. You'll then be given an option to confirm opening it.
+> The first time you launch StayActiveApp, macOS Gatekeeper might prevent it from opening because the app is downloaded from the internet and not from the Mac App Store.
+>
+> To bypass this:
+> 1.  **Try opening directly:**
+>     * **Right-click** (or Control-click) on **StayActive.app** in your Applications folder.
+>     * Select **"Open"** from the context menu.
+>     * A dialog box should appear with an **"Open"** button. Click it to confirm.
+> 2.  **If the "Open" button is not present in the dialog:**
+>     * Go to **System Settings** (or System Preferences).
+>     * Click on **Privacy & Security** in the sidebar.
+>     * In the "Security" section at the top, you should see a message about "StayActive" being blocked. Click the **"Open Anyway"** button next to this message. You'll likely be prompted to confirm again.
+>
+> You should only need to do this bypass once.
 
 ### Important Setup Steps
 
