@@ -97,7 +97,7 @@ class StayActiveApp(rumps.App):
         rumps.notification("StayActive", "", message)
         logging.info(f"Notification sent: {message}")
     
-    @rumps.clicked("About StayActiveApp")
+    @rumps.clicked("About StayActive")
     def open_app_website(self, _):
         """
         Opens the application's dedicated website/about page in the default web browser.
