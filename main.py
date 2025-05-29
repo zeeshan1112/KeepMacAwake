@@ -3,6 +3,7 @@ import rumps
 import threading
 import time
 import os
+import webbrowser
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -50,6 +51,10 @@ class StayActiveApp(rumps.App):
         """
         Initializes the StayActiveApp. Sets up the menu items, icon, and the initial state.
         """
+        self.app_version = "1.0.0"
+        self.app_copyright = "Copyright © 2025 Zeeshan Ahmad. All Rights Reserved."
+        self.app_website_url = "https://github.com/zeeshan1112/StayActiveApp"
+
         icon_path = os.path.join(os.path.dirname(__file__), "icon.png")
         super(StayActiveApp, self).__init__("StayActive", icon=icon_path)
         logging.info(f"Application initialized with icon: {icon_path}")
@@ -58,8 +63,10 @@ class StayActiveApp(rumps.App):
         self.start_item = rumps.MenuItem("Start", callback=self.start_clicked)
         self.stop_item = rumps.MenuItem("Stop", callback=self.stop_clicked)
 
+        self.about_item = rumps.MenuItem("About StayActive", callback=self.open_app_website)
+
         # Define the application menu
-        self.menu = [self.start_item, self.stop_item, None]
+        self.menu = [self.about_item, None, self.start_item, self.stop_item, None]
 
         # Use a timer to ensure the 'Stop' item is disabled after the menu is built.
         # This addresses a potential race condition or initialization order issue.
@@ -90,6 +97,20 @@ class StayActiveApp(rumps.App):
         rumps.notification("StayActive", "", message)
         logging.info(f"Notification sent: {message}")
     
+    @rumps.clicked("About StayActiveApp")
+    def open_app_website(self, _):
+        """
+        Opens the application's dedicated website/about page in the default web browser.
+        This replaces the old rumps.alert 'About' box.
+        """
+        try:
+            webbrowser.open_new(self.app_website_url)
+            logging.info(f"Opened app website: {self.app_website_url}")
+        except Exception as e:
+            # Fallback to an alert if the browser cannot be opened for some reason
+            rumps.alert(title="Error", message=f"Could not open web page:\n{self.app_website_url}\n\nError: {e}")
+            logging.error(f"Error opening app website: {e}")
+
     @rumps.clicked("Start")
     def start_clicked(self, _):
         """
