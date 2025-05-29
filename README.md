@@ -2,9 +2,9 @@
   <img src="icon.png" alt="StayActive Icon" width="120" />
 </p>
 
-<h1 align="center">StayActiveApp</h1>
+<h1 align="center">StayActive</h1>
 
-StayActiveApp is a lightweight macOS utility that simulates subtle, undetectable user activity to prevent your Mac from going idle or triggering sleep mode. It ensures your screen stays on and your apps remain active, without any visible mouse movement.
+StayActive is a lightweight macOS utility that simulates subtle, undetectable user activity to prevent your Mac from going idle or triggering sleep mode. It ensures your screen stays on and your apps remain active, without any visible mouse movement.
 
 ## ✨ Features
 
@@ -24,12 +24,12 @@ StayActiveApp is a lightweight macOS utility that simulates subtle, undetectable
         * If it says **"Apple M1," "Apple M2," "Apple M3,"** etc., you have an **Apple Silicon (ARM) Mac**.
         * If it says **"Intel"** (e.g., "Intel Core i5", "Intel Core i7"), you have an an **Intel Mac**.
 
-2.  Download the latest `.dmg` file for your chip type from [Releases](https://github.com/zeeshan1112/StayActiveApp/releases). You will find files named like `StayActive_X.Y.Z_Intel.dmg` or `StayActive_X.Y.Z_AppleSilicon.dmg`.
+2.  Download the latest `.dmg` file for your chip type from [Releases](https://github.com/zeeshan1112/StayActive/releases). You will find files named like `StayActive_X.Y.Z_Intel.dmg` or `StayActive_X.Y.Z_AppleSilicon.dmg`.
 
 3.  Open the downloaded `.dmg` file and drag **StayActive.app** to your Applications folder.
 
 > ⚠️ **First Launch Warning (Gatekeeper):**
-> The first time you launch StayActiveApp, macOS Gatekeeper might prevent it from opening because the app is downloaded from the internet and not from the Mac App Store.
+> The first time you launch StayActive, macOS Gatekeeper might prevent it from opening because the app is downloaded from the internet and not from the Mac App Store.
 >
 > To bypass this:
 > 1.  **Try opening directly:**
@@ -45,13 +45,13 @@ StayActiveApp is a lightweight macOS utility that simulates subtle, undetectable
 
 ### Important Setup Steps
 
-For StayActiveApp to function correctly and provide updates, you need to grant it specific permissions on your macOS system.
+For StayActive to function correctly and provide updates, you need to grant it specific permissions on your macOS system.
 
 #### 1. Granting Accessibility Permission (Required for Mouse Movement)
 
-StayActiveApp needs permission to "control your computer" to perform the slight, undetectable mouse movements that prevent your Mac from going to sleep. This is a standard macOS security measure for apps that automate input.
+StayActive needs permission to "control your computer" to perform the slight, undetectable mouse movements that prevent your Mac from going to sleep. This is a standard macOS security measure for apps that automate input.
 
-**If StayActiveApp doesn't seem to be working (e.g., your Mac still sleeps, or you don't see the mouse movement effect):**
+**If StayActive doesn't seem to be working (e.g., your Mac still sleeps, or you don't see the mouse movement effect):**
 
 1.  Go to **System Settings** (or **System Preferences** on older macOS versions).
 2.  Click on **Privacy & Security** in the sidebar.
@@ -61,11 +61,11 @@ StayActiveApp needs permission to "control your computer" to perform the slight,
     * If "StayActive" is already in the list, make sure its checkbox is **ticked (enabled)**.
     * If "StayActive" is *not* in the list, click the **`+` (plus) button** below the list, navigate to your `/Applications` folder (or wherever you dragged `StayActive.app`), select **"StayActive.app"**, and then click **"Open"**. Once added, make sure its checkbox is **ticked**.
 6.  Close System Settings.
-7.  If StayActiveApp was already running, you might need to **restart the StayActiveApp** from your menu bar for the changes to take effect.
+7.  If StayActive was already running, you might need to **restart the StayActive** from your menu bar for the changes to take effect.
 
 #### 2. Allowing Notifications (Optional)
 
-StayActiveApp can send notifications to let you know when it starts and stops. If you wish to receive these notifications:
+StayActive can send notifications to let you know when it starts and stops. If you wish to receive these notifications:
 
 1.  Go to **System Settings** (or **System Preferences**).
 2.  Click on **Notifications**.
@@ -78,7 +78,7 @@ To build the app yourself:
 
 ```bash
 git clone [https://github.com/zeeshan1112/StayActive.git](https://github.com/zeeshan1112/StayActive.git)
-cd StayActiveApp
+cd StayActive
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt

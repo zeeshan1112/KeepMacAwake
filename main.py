@@ -43,20 +43,20 @@ def move_mouse():
         time.sleep(30) # Wait for 30 seconds before moving the mouse again
         logging.info("Mouse movement thread stopped.")
 
-class StayActiveApp(rumps.App):
+class StayActive(rumps.App):
     """
     A rumps application that prevents the system from going idle by periodically moving the mouse.
     """
     def __init__(self):
         """
-        Initializes the StayActiveApp. Sets up the menu items, icon, and the initial state.
+        Initializes the StayActive. Sets up the menu items, icon, and the initial state.
         """
         self.app_version = "1.0.0"
         self.app_copyright = "Copyright © 2025 Zeeshan Ahmad. All Rights Reserved."
-        self.app_website_url = "https://github.com/zeeshan1112/StayActiveApp"
+        self.app_website_url = "https://zeeshan1112.github.io/stayactive-landing/"
 
         icon_path = os.path.join(os.path.dirname(__file__), "icon.png")
-        super(StayActiveApp, self).__init__("StayActive", icon=icon_path)
+        super(StayActive, self).__init__("StayActive", icon=icon_path)
         logging.info(f"Application initialized with icon: {icon_path}")
 
         # Create menu items for starting and stopping the activity
@@ -163,5 +163,5 @@ if __name__ == "__main__":
     if not quartz_available:
         logging.warning("Quartz module not found.\nMouse movement won't work.")
         rumps.alert("Quartz module not found.\nMouse movement won't work.")
-    StayActiveApp().run()
+    StayActive().run()
     logging.info("Application finished.")
