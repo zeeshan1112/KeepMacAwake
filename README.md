@@ -17,8 +17,16 @@ StayActiveApp is a lightweight macOS utility that simulates subtle, undetectable
 
 ### 🖥 macOS
 
-1.  Download the latest `.dmg` file from [Releases](https://github.com/zeeshan1112/StayActiveApp/releases).
-2.  Open the `.dmg` file and drag **StayActive.app** to your Applications folder.
+1.  **Identify your Mac's Chip:** Before downloading, determine your Mac's processor type to ensure you download the correct version:
+    * Click the **Apple menu** () in the top-left corner of your screen.
+    * Select **"About This Mac"**.
+    * Look for the "Chip" or "Processor" entry:
+        * If it says **"Apple M1," "Apple M2," "Apple M3,"** etc., you have an **Apple Silicon (ARM) Mac**.
+        * If it says **"Intel"** (e.g., "Intel Core i5", "Intel Core i7"), you have an an **Intel Mac**.
+
+2.  Download the latest `.dmg` file for your chip type from [Releases](https://github.com/zeeshan1112/StayActiveApp/releases). You will find files named like `StayActive_X.Y.Z_Intel.dmg` or `StayActive_X.Y.Z_AppleSilicon.dmg`.
+
+3.  Open the downloaded `.dmg` file and drag **StayActive.app** to your Applications folder.
 
 > ⚠️ **First Launch Warning (Gatekeeper):**
 > The first time you launch StayActiveApp, macOS Gatekeeper might present a warning because the app is downloaded from the internet and not from the Mac App Store. To open it, **right-click on StayActive.app in your Applications folder and select "Open"**. You'll then be given an option to confirm opening it.
