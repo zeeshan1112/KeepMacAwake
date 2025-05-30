@@ -46,8 +46,8 @@ StayActive is engineered for seamless integration and maximum efficiency on macO
 
 Choose the correct version for your Mac's chip:
 
-* **[Download for Apple Silicon (M1/M2/M3 Macs)](https://github.com/zeeshan1112/StayActive/releases/latest/download/StayActive_AppleSilicon.dmg)**
-* **[Download for Intel Mac](https://github.com/zeeshan1112/StayActive/releases/latest/download/StayActive_Intel.dmg)**
+* **[Download for Apple Silicon (M1/M2/M3 Macs)](https://github.com/zeeshan1112/StayActive/releases/latest/download/StayActive_1.0.1_AppleSilicon.dmg)**
+* **[Download for Intel Mac](https://github.com/zeeshan1112/StayActive/releases/latest/download/StayActive_1.0.1_Intel.dmg)**
 
 > 💡 **Not sure which chip your Mac has?**
 > Click the **Apple menu** () in the top-left corner of your screen and choose **"About This Mac."** Look for "Chip" or "Processor."
@@ -56,16 +56,20 @@ Choose the correct version for your Mac's chip:
 
 1.  Open the downloaded `.dmg` file and drag **StayActive.app** to your Applications folder.
 
-2.  <p style="color: orange; font-weight: bold; font-size: 1.1em;">⚠️ First Launch Warning (Gatekeeper):</p>
-    The first time you launch StayActive, macOS Gatekeeper might prevent it from opening because the app is downloaded from the internet and not from the Mac App Store.
-
-    To bypass this:
-    * **Right-click** (or Control-click) on **StayActive.app** in your Applications folder.
-    * Select **"Open"** from the context menu.
-    * A dialog box should appear with an **"Open"** button. Click it to confirm.
-    * *If the "Open" button is not present in the dialog:* Go to **System Settings** (or System Preferences) > **Privacy & Security**. Scroll down and click **"Open Anyway"** next to the message about "StayActive" being blocked.
-
-    You should only need to do this bypass once.
+> ⚠️ **First Launch Warning (Gatekeeper):**
+> The first time you launch StayActive, macOS Gatekeeper might prevent it from opening because the app is downloaded from the internet and not from the Mac App Store.
+>
+> To bypass this:
+> 1.  **Try opening directly:**
+>     * **Right-click** (or Control-click) on **StayActive.app** in your Applications folder.
+>     * Select **"Open"** from the context menu.
+>     * A dialog box should appear with an **"Open"** button. Click it to confirm.
+> 2.  **If the "Open" button is not present in the dialog:**
+>     * Go to **System Settings** (or System Preferences).
+>     * Click on **Privacy & Security** in the sidebar.
+>     * In the "Security" section at the top, you should see a message about "StayActive" being blocked. Click the **"Open Anyway"** button next to this message. You'll likely be prompted to confirm again.
+>
+> You should only need to do this bypass once.
 
 ### 3. Grant Essential Permissions
 
@@ -119,6 +123,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python setup.py py2app   # To build the macOS application
+```
 
 ---
 
