@@ -140,13 +140,13 @@ Your contribution fuels future improvements and new features. If you find StayAc
 Have questions, suggestions, or just want to say hello?
 
 * For technical issues or feature requests, please **[open an Issue on GitHub](https://github.com/zeeshan1112/StayActive/issues)**.
-* For other inquiries, you can use the contact form on our [official website](https://github.com/zeeshan1112/StayActive/StayActive.github.io).
+* For other inquiries, you can use the contact form on our [official website](https://zeeshan1112.github.io/stayactive-landing).
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under a **custom non-commercial license**. - see the [LICENSE](LICENSE.txt) file for details.
 
 ---
 
