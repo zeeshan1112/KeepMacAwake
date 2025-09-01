@@ -43,27 +43,27 @@ def move_mouse():
         time.sleep(30) # Wait for 30 seconds before moving the mouse again
         logging.info("Mouse movement thread stopped.")
 
-class StayActive(rumps.App):
+class KeepMacAwake(rumps.App):
     """
     A rumps application that prevents the system from going idle by periodically moving the mouse.
     """
     def __init__(self):
         """
-        Initializes the StayActive. Sets up the menu items, icon, and the initial state.
+        Initializes the KeepMacAwake. Sets up the menu items, icon, and the initial state.
         """
         self.app_version = "1.0.0"
         self.app_copyright = "Copyright © 2025 Zeeshan Ahmad. All Rights Reserved."
-        self.app_website_url = "https://zeeshan1112.github.io/stayactive-landing/"
+        self.app_website_url = "https://zeeshan1112.github.io/keepmacawake-landing/"
 
-        icon_path = os.path.join(os.path.dirname(__file__), "icon.png")
-        super(StayActive, self).__init__("StayActive", icon=icon_path)
+        icon_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'assets', 'icon.png'))
+        super(KeepMacAwake, self).__init__("KeepMacAwake", icon=icon_path)
         logging.info(f"Application initialized with icon: {icon_path}")
 
         # Create menu items for starting and stopping the activity
         self.start_item = rumps.MenuItem("Start", callback=self.start_clicked)
         self.stop_item = rumps.MenuItem("Stop", callback=self.stop_clicked)
 
-        self.about_item = rumps.MenuItem("About StayActive", callback=self.open_app_website)
+        self.about_item = rumps.MenuItem("About KeepMacAwake", callback=self.open_app_website)
 
         # Define the application menu
         self.menu = [self.about_item, None, self.start_item, self.stop_item, None]
@@ -94,10 +94,10 @@ class StayActive(rumps.App):
         Args:
             message (str): The message to display in the notification.
         """
-        rumps.notification("StayActive", "", message)
+        rumps.notification("KeepMacAwake", "", message)
         logging.info(f"Notification sent: {message}")
     
-    @rumps.clicked("About StayActive")
+    @rumps.clicked("About KeepMacAwake")
     def open_app_website(self, _):
         """
         Opens the application's dedicated website/about page in the default web browser.
@@ -163,5 +163,5 @@ if __name__ == "__main__":
     if not quartz_available:
         logging.warning("Quartz module not found.\nMouse movement won't work.")
         rumps.alert("Quartz module not found.\nMouse movement won't work.")
-    StayActive().run()
+    KeepMacAwake().run()
     logging.info("Application finished.")

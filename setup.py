@@ -1,15 +1,15 @@
 from setuptools import setup
 
-APP = ['main.py']
-DATA_FILES = ['icon.png']
+APP = ['src/keepmacawake/main.py']
+DATA_FILES = ['assets/icon.png']
 OPTIONS = {
-    'iconfile': 'icon.png',
+    'iconfile': 'assets/icon.png',
     'packages': ['rumps', 'Quartz'],
     'includes': ['imp'],
     'plist': {
-        'CFBundleName': 'StayActive',
-        'CFBundleDisplayName': 'StayActive',
-        'CFBundleIdentifier': 'com.zeeshan.stayactive',
+        'CFBundleName': 'KeepMacAwake',
+        'CFBundleDisplayName': 'KeepMacAwake',
+        'CFBundleIdentifier': 'com.zeeshan.keepmacawake',
         'CFBundleVersion': '0.1.0',
         'LSUIElement': True,  # hides dock icon
     }
