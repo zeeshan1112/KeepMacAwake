@@ -13,9 +13,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/zeeshan1112/StayActive/releases/latest"><img src="https://img.shields.io/github/v/release/zeeshan1112/StayActive?style=for-the-badge&label=Download%20Latest&color=007AFF&logo=apple&logoColor=white" alt="Download Latest Release"></a>
-  <a href="https://github.com/zeeshan1112/StayActive/issues"><img src="https://img.shields.io/github/issues/zeeshan1112/StayActive?style=for-the-badge&color=blue" alt="Open Issues"></a>
-  <a href="https://github.com/zeeshan1112/StayActive/stargazers"><img src="https://img.shields.io/github/stars/zeeshan1112/StayActive?style=for-the-badge&color=yellow" alt="GitHub Stars"></a>
+  <a href="https://github.com/zeeshan1112/KeepMacAwake/releases/latest"><img src="https://img.shields.io/github/v/release/zeeshan1112/KeepMacAwake?style=for-the-badge&label=Download%20Latest&color=007AFF&logo=apple&logoColor=white" alt="Download Latest Release"></a>
+  <a href="https://github.com/zeeshan1112/KeepMacAwake/issues"><img src="https://img.shields.io/github/issues/zeeshan1112/KeepMacAwake?style=for-the-badge&color=blue" alt="Open Issues"></a>
+  <a href="https://github.com/zeeshan1112/KeepMacAwake/stargazers"><img src="https://img.shields.io/github/stars/zeeshan1112/KeepMacAwake?style=for-the-badge&color=yellow" alt="GitHub Stars"></a>
   <a href="https://paypal.me/zeeshanahmad123"><img src="https://img.shields.io/badge/Support%20Me-PayPal-blue.svg?style=for-the-badge&logo=paypal" alt="Support on PayPal"></a>
 </p>
 
@@ -46,8 +46,8 @@ KeepMacAwake is engineered for seamless integration and maximum efficiency on ma
 
 Choose the correct version for your Mac's chip:
 
-* **[Download for Apple Silicon (M1/M2/M3 Macs)](https://github.com/zeeshan1112/StayActive/releases/latest/download/StayActive_1.0.1_AppleSilicon.dmg)**
-* **[Download for Intel Mac](https://github.com/zeeshan1112/StayActive/releases/latest/download/StayActive_1.0.1_Intel.dmg)**
+* **[Download for Apple Silicon (M1/M2/M3 Macs)](https://github.com/zeeshan1112/KeepMacAwake/releases/latest/download/KeepMacAwake_1.0.1_AppleSilicon.dmg)**
+* **[Download for Intel Mac](https://github.com/zeeshan1112/KeepMacAwake/releases/latest/download/KeepMacAwake_1.0.1_Intel.dmg)**
 
 > 💡 **Not sure which chip your Mac has?**
 > Click the **Apple menu** () in the top-left corner of your screen and choose **"About This Mac."** Look for "Chip" or "Processor."
@@ -117,8 +117,8 @@ Once installed and permissions are granted:
 Interested in contributing or building KeepMacAwake yourself? Here's how:
 
 ```bash
-git clone [https://github.com/zeeshan1112/StayActive.git](https://github.com/zeeshan1112/StayActive.git)
-cd StayActive
+git clone [https://github.com/zeeshan1112/KeepMacAwake.git](https://github.com/zeeshan1112/KeepMacAwake.git)
+cd KeepMacAwake
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -139,7 +139,7 @@ Your contribution fuels future improvements and new features. If you find KeepMa
 
 Have questions, suggestions, or just want to say hello?
 
-* For technical issues or feature requests, please **[open an Issue on GitHub](https://github.com/zeeshan1112/StayActive/issues)**.
+* For technical issues or feature requests, please **[open an Issue on GitHub](https://github.com/zeeshan1112/KeepMacAwake/issues)**.
 * For other inquiries, you can use the contact form on our [official website](https://zeeshan1112.github.io/stayactive-landing).
 
 ---
