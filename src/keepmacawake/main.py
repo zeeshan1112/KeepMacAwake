@@ -51,11 +51,13 @@ class KeepMacAwake(rumps.App):
         """
         Initializes the KeepMacAwake. Sets up the menu items, icon, and the initial state.
         """
-        self.app_version = "2.0.1"
+        self.app_version = "2.0.2"
         self.app_copyright = "Copyright © 2025 Zeeshan Ahmad. All Rights Reserved."
         self.app_website_url = "https://keepmacawake.netlify.app/"
 
         icon_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'assets', 'icon.png'))
+        if not os.path.exists(icon_path):
+            icon_path = os.path.join(os.path.dirname(__file__), 'icon.png')
         super(KeepMacAwake, self).__init__("KeepMacAwake", icon=icon_path)
         logging.info(f"Application initialized with icon: {icon_path}")
 
